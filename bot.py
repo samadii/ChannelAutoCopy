@@ -1,4 +1,4 @@
-
+import os
 
 from telethon import TelegramClient, events
 from decouple import config
@@ -12,15 +12,15 @@ print("Starting...")
 # Basics
 APP_ID = config("APP_ID", default=None, cast=int)
 API_HASH = config("API_HASH", default=None)
-SESSION = config("SESSION")
 FROM_ = config("FROM_CHANNEL")
 TO_ = config("TO_CHANNEL")
+string = os.environ.get('SESSION')
 
 FROM = [int(i) for i in FROM_.split()]
 TO = [int(i) for i in TO_.split()]
 
 try:
-    BotzHubUser = TelegramClient(StringSession(SESSION), APP_ID, API_HASH)
+    BotzHubUser = TelegramClient(StringSession(string), APP_ID, API_HASH)
     BotzHubUser.start()
 except Exception as ap:
     print(f"ERROR - {ap}")
