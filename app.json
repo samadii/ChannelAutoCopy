@@ -11,15 +11,15 @@
             "value": ""
         },
         "SESSION": {
-            "description": "Bot token, get it from @BotFather.",
+            "description": "enter your string session, get it only from @stringsessionbot.",
             "value": ""
         },
         "FROM_CHANNEL": {
-            "description": "paste here one/many Channel(s) ID.",
+            "description": "enter the channel ID(s) here, separate by space, get it from @chnlidbot",
             "value": ""
         },
         "TO_CHANNEL": {
-            "description": "Add your bot to your channel(s) and paste the Channel ID here",
+            "description": "enter your channel ID(s) here, separate by space, get it from @chnlidbot",
             "value": ""
         }
     },
