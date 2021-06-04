@@ -34,7 +34,7 @@
 
         },
 
-        "BOT_TOKEN": {
+        "SESSION": {
 
             "description": "Bot token, get it from @BotFather.",
 
