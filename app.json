@@ -1,0 +1,73 @@
+{
+
+"name": "Channel Auto Forward",
+
+    "description": "Telegram Bot To Forward Msg.",
+
+    "logo": "",
+
+    "keywords": [
+
+        "telegram",
+
+        "telethon",
+
+        "telegram-bot",
+
+    ],
+
+    "env": {
+
+        "API_HASH": {
+
+            "description": "You API HASH from my.telegram.org",
+
+            "value": ""
+
+        },
+
+        "APP_ID": {
+
+            "description": "You API ID from my.telegram.org",
+
+            "value": ""
+
+        },
+
+        "BOT_TOKEN": {
+
+            "description": "Bot token, get it from @BotFather.",
+
+            "value": ""
+
+        },
+
+        "FROM_CHANNEL": {
+
+            "description": "paste here one/many Channel(s) ID.",
+
+            "value": ""
+
+        },
+
+        "TO_CHANNEL": {
+
+            "description": "Add your bot to your channel(s) and paste the Channel ID here",
+
+            "value": ""
+
+        }
+
+    },
+
+    "buildpacks": [
+
+        {
+
+            "url": "heroku/python"
+
+        }
+
+    ]
+
+}
