@@ -1,4 +1,4 @@
-# Channel Auto Message Forward
+# Channel Auto Message Post
 
 A script to automate fowarding all new messages from one/many channel(s) to another channel(s), without the forwarded tag.
 
@@ -16,7 +16,7 @@ All new messages will be auto-posted!! Join the channel from you want the posts 
 
 ## Deploy to Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/samadii/ChannelAutoForward)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/samadii/ChannelAutoCopy)
 
 
 
