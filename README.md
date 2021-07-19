@@ -4,9 +4,12 @@ A script to automate fowarding all new messages from one/many channel(s) to anot
 
 
 ## Config vars
-> `APP_ID` and `API_HASH` - Get it from my.telegram.org   
-> `SESSION` - A telethon session string, get it from [here](https://t.me/sessionstringbot).   
-> `FROM_CHANNEL` - Channel ID(s) split by space or just one channel ID.   
+> `APP_ID` and `API_HASH` - Get it from my.telegram.org or [bot](https://t.me/ScrapperRoBot).
+
+> `SESSION` - A telethon session string, get it from [here](https://t.me/sessionstringbot).
+   
+> `FROM_CHANNEL` - Channel ID(s) split by space or just one channel ID.
+   
 > `TO_CHANNEL` - Channel ID(s) split by space or just one channel ID.   
 
 
