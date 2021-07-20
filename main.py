@@ -20,22 +20,35 @@ FROM = [int(i) for i in FROM_.split()]
 TO = [int(i) for i in TO_.split()]
 
 try:
-    BotzHubUser = TelegramClient(StringSession(string), APP_ID, API_HASH)
-    BotzHubUser.start()
+    Bot = TelegramClient(StringSession(string), APP_ID, API_HASH)
+    Bot.start()
 except Exception as ap:
     print(f"ERROR - {ap}")
     exit(1)
 
-@BotzHubUser.on(events.NewMessage(incoming=True, chats=FROM))
-async def sender_bH(event):
+@Bot.on(events.NewMessage(incoming=True, chats=FROM))
+async def send(event):
     for i in TO:
         try:
-            await BotzHubUser.send_message(
-                i,
-                event.message
-            )
+            if event.poll:
+                return
+            if event.photo:
+                photo = event.media.photo
+                await Bot.send_file(i, photo, caption = event.text, link_preview = False)
+            elif event.media:
+                try:
+                    if event.media.webpage:
+                        await Bot.send_message(i, event.text, link_preview = False)
+                        return
+                except:
+                    media = event.media.document
+                    await Bot.send_file(i, media, caption = event.text, link_preview = False)
+                    return
+            else:
+                await Bot.send_message(i, event.text, link_preview = False)
+
         except Exception as e:
             print(e)
 
 print("Bot has started.")
-BotzHubUser.run_until_disconnected()
+Bot.run_until_disconnected()
