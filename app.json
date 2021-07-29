@@ -3,15 +3,15 @@
     "description": "Telegram Bot To Forward Msg.",
     "env": {
         "API_HASH": {
-            "description": "You API HASH from my.telegram.org (or @ScrapperRoBot)",
+            "description": "You API HASH from my.telegram.org",
             "value": ""
         },
         "APP_ID": {
-            "description": "You API ID from my.telegram.org (or @ScrapperRoBot)",
+            "description": "You API ID from my.telegram.org",
             "value": ""
         },
         "SESSION": {
-            "description": "enter your string session, get it only from @sessionstringbot.",
+            "description": "enter your Telethon string session, you can get it from @stringsessionbot.",
             "value": ""
         },
         "FROM_CHANNEL": {
